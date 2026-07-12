@@ -60,13 +60,13 @@ export default function Hero() {
           <div className="lg:col-span-5 hidden lg:block" aria-hidden="true" />
 
           {/* Right Column: Heading and description */}
-          <div className="lg:col-span-7 flex flex-col items-end text-right gap-3 sm:gap-5 md:gap-8 w-full">
+          <div className="lg:col-span-7 flex flex-col items-start lg:items-end text-left lg:text-right gap-3 sm:gap-5 md:gap-8 w-full">
             
             {/* Main title */}
             {/* Main title (Styled to match logo font) */}
             <h1 
               id="hero-title" 
-              className="flex flex-col items-end text-white leading-none w-full"
+              className="flex flex-col items-start lg:items-end text-white leading-none w-full"
             >
               <span className="font-nunito text-[80px] sm:text-[110px] lg:text-[140px] font-black tracking-normal lowercase select-none py-1 filter drop-shadow-md">
                 mols
@@ -87,7 +87,7 @@ export default function Hero() {
             </p>
 
             {/* Buttons — full width on mobile for clean touch targets */}
-            <div className="flex w-full sm:w-auto gap-3 sm:gap-4 mt-1 justify-end">
+            <div className="flex w-full sm:w-auto gap-3 sm:gap-4 mt-1 justify-start lg:justify-end">
               <a
                 href="/menu"
                 className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 sm:gap-3 rounded-xl bg-white px-5 py-3 sm:px-7 sm:py-3.5 text-xs sm:text-sm font-bold text-brand-brown hover:bg-white/90 transition-colors duration-200 shadow-lg shadow-black/10"
