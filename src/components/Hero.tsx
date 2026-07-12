@@ -68,11 +68,11 @@ export default function Hero() {
               id="hero-title" 
               className="flex flex-col items-end text-white leading-none w-full"
             >
-              <span className="font-satisfy text-[72px] sm:text-8xl lg:text-[130px] font-normal tracking-normal capitalize select-none py-2 filter drop-shadow-md">
-                Mols
+              <span className="font-nunito text-[80px] sm:text-[110px] lg:text-[140px] font-black tracking-normal lowercase select-none py-1 filter drop-shadow-md">
+                mols
               </span>
-              <span className="font-oswald text-3xl sm:text-4xl lg:text-5xl tracking-[0.3em] uppercase font-bold mt-1 select-none filter drop-shadow-sm">
-                Cafe
+              <span className="font-nunito italic text-lg sm:text-xl lg:text-2xl tracking-[0.25em] lowercase font-semibold -mt-2 sm:-mt-4 select-none filter drop-shadow-sm opacity-90">
+                coffee & eatery
               </span>
             </h1>
 
