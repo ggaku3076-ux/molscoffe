@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Desktop background */}
       <div className="absolute inset-0 hidden lg:block z-0" aria-hidden="true">
         <Image
-          src="/Asset/BACKGROUND.jpg"
+          src="/Asset/BACKGROUND.png"
           alt="Mols Coffe Desktop Background"
           fill
           priority
@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Mobile background (portrait-optimized image) */}
       <div className="absolute inset-0 block lg:hidden z-0" aria-hidden="true">
         <Image
-          src="/Asset/Tanpa judul (Reel Instagram).png"
+          src="/Asset/BACKGROUND.png"
           alt="Mols Coffe Mobile Background"
           fill
           priority

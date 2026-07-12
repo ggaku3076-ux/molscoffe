@@ -20,7 +20,7 @@ export default function Footer() {
               <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/Asset/LOGO.png"
+                  src="/Asset/LOGO.jpg"
                   alt="Mols Coffe Surabaya Logo"
                   className="h-full w-full object-cover"
                 />
@@ -106,7 +106,7 @@ export default function Footer() {
                 <div className="relative h-12 w-12 shrink-0 rounded-full overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/Asset/LOGO.png"
+                    src="/Asset/LOGO.jpg"
                     alt="Mols Coffe Surabaya Logo"
                     className="h-full w-full object-cover"
                   />

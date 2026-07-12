@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/Asset/LOGO.png",
+        url: "/Asset/LOGO.jpg",
         width: 800,
         height: 800,
         alt: "Mols Coffe Surabaya Logo",
