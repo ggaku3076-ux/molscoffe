@@ -1,0 +1,100 @@
+import type { Metadata, Viewport } from "next";
+import { Plus_Jakarta_Sans, Nunito, Satisfy, Oswald } from "next/font/google";
+import "./globals.css";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const nunito = Nunito({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
+});
+
+const satisfy = Satisfy({
+  variable: "--font-satisfy",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const oswald = Oswald({
+  variable: "--font-oswald",
+  subsets: ["latin"],
+  weight: ["500", "700"],
+});
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://molscoffe.vercel.app"),
+  title: "Mols Coffe Surabaya | Cafe Aesthetic Tropis & Family Friendly",
+  description: "Mols Coffe Surabaya menyajikan kopi premium, menu sehat smoothies bowl, makanan barat & nusantara. Nikmati suasana aesthetic bertema tropis ala Bali dengan area ramah keluarga dan playground di Surabaya.",
+  keywords: [
+    "Mols Coffe Surabaya", 
+    "Cafe Surabaya", 
+    "Cafe Aesthetic Surabaya", 
+    "Cafe Bali Surabaya", 
+    "Cafe Playground Surabaya", 
+    "Smoothies Bowl Surabaya", 
+    "Kuliner Surabaya",
+    "Kopi Surabaya",
+    "Tempat Nongkrong Surabaya",
+    "WFC Surabaya"
+  ],
+  authors: [{ name: "Mols Coffe Surabaya Team" }],
+  openGraph: {
+    title: "Mols Coffe Surabaya | Cafe Aesthetic Tropis & Family Friendly",
+    description: "Mols Coffe Surabaya menyajikan kopi premium, menu sehat smoothies bowl, makanan barat & nusantara. Nikmati suasana aesthetic bertema tropis ala Bali dengan area ramah keluarga dan playground di Surabaya.",
+    url: "https://molscoffe.vercel.app",
+    siteName: "Mols Coffe Surabaya",
+    locale: "id_ID",
+    type: "website",
+    images: [
+      {
+        url: "/Asset/LOGO.png",
+        width: 800,
+        height: 800,
+        alt: "Mols Coffe Surabaya Logo",
+      }
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="id"
+      className={`${plusJakartaSans.variable} ${nunito.variable} ${satisfy.variable} ${oswald.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-brand-light text-brand-dark selection:bg-brand-brown selection:text-white">
+        <Navbar />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}

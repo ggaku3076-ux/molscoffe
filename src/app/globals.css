@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Brand color tokens (Brown & White only) */
+  --brand-brown: #6f4e37;       /* Elegant coffee brown for high-contrast elements and buttons */
+  --brand-brown-light: #a17453; /* Warm caramel/light brown for highlights/borders */
+  --brand-brown-bg: #fcfaf7;    /* Soft milk/cream white tint for alternate sections */
+  --brand-dark: #2a1b10;        /* Espresso dark brown for text */
+  --brand-light: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-brown: var(--brand-brown);
+  --color-brand-brown-light: var(--brand-brown-light);
+  --color-brand-brown-bg: var(--brand-brown-bg);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+  
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-nunito: var(--font-nunito), sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+  --font-satisfy: 'Satisfy', cursive;
+  --font-oswald: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: var(--brand-light);
+  color: var(--brand-dark);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar matching our theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-brown);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-brown-light);
+}
+
+/* Accessibility focus styles */
+*:focus-visible {
+  outline: 2px solid var(--brand-brown-light);
+  outline-offset: 2px;
+}
