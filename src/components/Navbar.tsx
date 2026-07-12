@@ -60,7 +60,7 @@ export default function Navbar() {
             <div className="relative h-16 w-16 shrink-0 rounded-full overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/Asset/LOGO.jpg"
+                src="/Asset/LOGO.png"
                 alt="Mols Coffe Logo"
                 className="h-full w-full object-cover"
               />
@@ -157,7 +157,7 @@ export default function Navbar() {
             <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/Asset/LOGO.jpg"
+                src="/Asset/LOGO.png"
                 alt="Mols Coffe Logo"
                 className="h-full w-full object-cover"
               />
