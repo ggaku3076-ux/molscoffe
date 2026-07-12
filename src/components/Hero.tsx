@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Mobile background (portrait-optimized image) */}
       <div className="absolute inset-0 block lg:hidden z-0" aria-hidden="true">
         <Image
-          src="/Asset/BACKGROUND.png"
+          src="/Asset/Background_mobile.png"
           alt="Mols Coffe Mobile Background"
           fill
           priority
